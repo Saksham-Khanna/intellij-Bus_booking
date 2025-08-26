@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/Bus_Booking";
-        String user = "root";
-        String password = "Sakshamm5*";
+        String user = "root"; // check this in your mysql
+        String password = ""; // enter your mysql password
 
         try (Connection con = DriverManager.getConnection(url, user, password);
              Scanner sc = new Scanner(System.in)) {
@@ -87,3 +87,4 @@ public class Main {
         }
     }
 }
+
